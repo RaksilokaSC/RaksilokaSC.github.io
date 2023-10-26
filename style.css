@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --lightGray: #D9D9D9;
+  --gray: #BEBEBE;
+  --darkGray: #9F9F9F;
+}
+
+body {
+  margin: 0;
+  /* font-family: "Red Rose", serif; */
+  font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  background-position: center;
+  font-size: 16px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+h1{
+  font-weight: 700;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: 0 4rem;
+}
+
+nav {
+  padding: 1rem 4rem;
+  height: 6rem;
+  background-color: var(--lightGray);
+}
+nav .navItems{
+  padding: 0;
+  margin: 0;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+nav .logo{
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  background-color: gray;
+  border-radius: 2rem;
+}
+nav .title{
+  display: inline-block;
+  padding: .5rem 1.5rem;
+  height: 4rem;
+}
+nav .title .titleOne{
+  height: 2rem;
+  font-size: 2rem;
+}
+nav .title .titleTwo{
+  font-size: 0.75rem;
+  padding: .125rem 0;
+  height: 1rem;
+}
+
+/* nav.scrolled {
+
+} */
+
+.hero-section{
+  height: 58rem;
+}
+
+.hero{
+  height: 52rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray);
+}
+.hero .title{
+  text-align: center;
+  height: 8rem;
+}
+.hero h1{
+  font-size: 4rem;
+  font-weight: 600;
+  height: 5rem;
+  padding: 0 0 1rem;
+  margin: 0;
+}
+.hero p{
+  font-size: 2rem;
+  /* font-weight: 500; */
+  height: 3rem;
+  padding: 1rem 0 0;
+  margin: 0;
+}
+
+.socmed{
+  height: 6rem;
+  background-color: var(--lightGray);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.socmed .socmedItem{
+  display: flex;
+  align-items: center;
+
+}
+.socmed .logo{
+  width: 3.5rem;
+  height: 3.5rem;
+  display: inline-block;
+  background-color: var(--darkGray);
+  border-radius: 2.25rem;
+}
+.socmed .title{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.25rem;
+  height: 3.5rem;
+  padding: 1.125rem 1.5rem;
+}
+
