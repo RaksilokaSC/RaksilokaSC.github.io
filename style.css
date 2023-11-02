@@ -8,6 +8,7 @@
   --lightGray: #D9D9D9;
   --gray: #BEBEBE;
   --darkGray: #9F9F9F;
+  font-size: 16px;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
   font-family: "Montserrat", sans-serif;
   background-size: cover;
   background-position: center;
-  font-size: 16px;
 }
 
 a{
@@ -38,9 +38,8 @@ h1, h2, .titleOne{
   font-weight: 700;
 }
 
-.wrapper {
-  max-width: 90%;
-  margin: 0 4rem;
+section{
+  padding: 4rem 4rem;
 }
 
 .logo img{
@@ -87,10 +86,6 @@ nav .title .titleTwo{
 
 } */
 
-.hero-section{
-  height: 58rem;
-}
-
 .hero{
   height: 52rem;
   display: flex;
@@ -122,7 +117,7 @@ nav .title .titleTwo{
   background-color: var(--lightGray);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .socmed .socmedItem{
   display: flex;
@@ -135,6 +130,7 @@ nav .title .titleTwo{
   display: inline-block;
   background-color: var(--darkGray);
   border-radius: 2.25rem;
+  background-size: 3.5rem;
 }
 .socmed .title{
   display: inline-block;
@@ -142,15 +138,31 @@ nav .title .titleTwo{
   height: 3.5rem;
   padding: 1.125rem 1.5rem;
 }
+.socmed .logo.pji{
+  background-image: url(./pji.png);
+}
+.socmed .logo.zr{
+  background-image: url(./zr.png);
+}
+.socmed .logo.sm1{
+  background-image: url(./sm1.png);
+}
 
 footer {
   background: #383431;
-  padding: 4rem 14rem;
   color: #F1F1F1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 4rem 8rem;
 }
 footer .links-container {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer .links{
+  margin: 0;
+  margin-left: auto;
+  width: 80%;
 }
 footer .logoAndTitle{
   padding: 0;
@@ -185,12 +197,6 @@ footer .title .titleTwo{
 footer .description{
   padding: .5rem;
 }
-footer .wrapper h3 {
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin: .5rem 0;
-  color: #72C2A9;
-}
 footer ul {
   margin: .5rem 0;
 }
@@ -208,4 +214,68 @@ footer p {
   margin: .5rem 0;
   font-size: .75rem;
   opacity: 0.75;
+  word-wrap: break-word;
+}
+
+
+@media only screen and (max-width: 1220px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .socmed .title{
+    display: none;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    padding: 4rem 6rem;
+  }
+  footer .logoAndTitle{
+    justify-content: center;
+  }
+  footer p{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  footer .links-container {
+    grid-template-columns: 1fr;
+  }
+  footer .links {
+    margin: 0 auto;
+  }
+  footer ul, footer li, footer h3{
+    padding-inline-start: 0;
+    text-align: center;
+  }
+  footer ul li{
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  :root{
+    font-size: 10px;
+  }
+  section{
+    padding: 4rem 2.5rem;
+  }
+  .hero h1{
+    font-size: 4.9rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  :root{
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 240px) {
+  :root{
+    font-size: 6px;
+  }
 }
