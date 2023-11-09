@@ -198,6 +198,10 @@ nav .title .titleTwo{
   grid-template-columns: 1rem 15fr;
   padding: 4rem 20%;
 }
+.profiles .slider {
+  margin: auto 0;
+  display: block;
+}
 .profiles .sliderItems{
   display: grid;
   justify-content: center;
@@ -213,6 +217,7 @@ nav .title .titleTwo{
 }
 .profileCard{
   padding: 4rem;
+  padding-left: 8rem;
   background-color: var(--profile);
   border-radius: 2rem;
   margin: 1.5rem 0 0 5rem;
@@ -229,15 +234,10 @@ nav .title .titleTwo{
   left: -2.5rem;
   top: -1.5rem;
 }
-.profileCard .nameAndPos{
-  text-align: center;
-  margin: .5rem 0 1rem;
-}
-.profileCard .nameAndPos .name{
-  font-weight: 600;
-}
-.profileCard .nameAndPos .pos{
-  font-size: .75rem;
+.profileCard .msgAndID {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
 }
 
 footer {
@@ -348,10 +348,11 @@ footer .endingText{
   }
   .profileCard{
     grid-template-columns: 1fr 4fr;
+    margin: 1.5rem 0;
+    margin-left: 5rem;
   }
   .profileCard .img img{
-    height: 4rem;
-    width: 4rem;
+    display: none;
   }
   footer .links-container {
     grid-template-columns: 1fr;
