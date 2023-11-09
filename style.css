@@ -16,6 +16,8 @@
   --greenLogo: #2C4F30;
   --navGreen: rgba(30, 71, 45, 1);
   --accent: #F0EAD6;
+  --profile: #C5A279;
+  --profileShadow: #B98B55;
   /* --navScrGreen: rgba(59, 117, 83, 0.8); */
   /* --navScrGreen: rgba(14, 60, 31, 0.8); */
   font-size: 16px;
@@ -87,10 +89,10 @@ nav .navItems ul{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 3rem;
+  gap: 2rem;
   list-style: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   padding: 0;
 }
@@ -164,7 +166,6 @@ nav .title .titleTwo{
 .socmed .socmedItem{
   display: flex;
   align-items: center;
-
 }
 .socmed .logo{
   width: 3.5rem;
@@ -188,6 +189,55 @@ nav .title .titleTwo{
 }
 .socmed .logo.sm1{
   background-image: url(./sm1.png);
+}
+
+
+.profiles{
+  background-color: var(--green);
+  display: grid;
+  grid-template-columns: 1rem 15fr;
+  padding: 4rem 20%;
+}
+.profiles .sliderItems{
+  display: grid;
+  justify-content: center;
+  align-content: space-between;
+}
+.profiles .slider .dot{
+  width: .5rem;
+  height: .5rem;
+  border-radius: .25rem;
+  background-color: #B98B55;
+  display: block;
+  margin: 1rem 0;
+}
+.profileCard{
+  padding: 4rem;
+  background-color: var(--profile);
+  border-radius: 2rem;
+  margin: 1.5rem 0 0 5rem;
+  box-shadow: .5rem .5rem var(--profileShadow);
+  display: flex;
+  position: relative;
+}
+.profileCard .img img{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 3rem;
+  display: block;
+  position: absolute;
+  left: -2.5rem;
+  top: -1.5rem;
+}
+.profileCard .nameAndPos{
+  text-align: center;
+  margin: .5rem 0 1rem;
+}
+.profileCard .nameAndPos .name{
+  font-weight: 600;
+}
+.profileCard .nameAndPos .pos{
+  font-size: .75rem;
 }
 
 footer {
@@ -258,6 +308,10 @@ footer p {
   opacity: 0.75;
   word-wrap: break-word;
 }
+footer .endingText{
+  text-align: right;
+  grid-column: 1/2;
+}
 
 
 @media only screen and (max-width: 1220px) {
@@ -283,8 +337,21 @@ footer p {
 }
 
 @media only screen and (max-width: 615px) {
+  nav{
+    justify-content: center;
+  }
   nav .navItems.list ul{
     display: none;
+  }
+  .profiles{
+    padding: 4rem 10%;
+  }
+  .profileCard{
+    grid-template-columns: 1fr 4fr;
+  }
+  .profileCard .img img{
+    height: 4rem;
+    width: 4rem;
   }
   footer .links-container {
     grid-template-columns: 1fr;
@@ -322,6 +389,11 @@ footer p {
 @media only screen and (max-width: 240px) {
   :root{
     font-size: 6px;
+  }
+}
+@media only screen and (max-width: 180px) {
+  :root{
+    font-size: 4px;
   }
 }
 
