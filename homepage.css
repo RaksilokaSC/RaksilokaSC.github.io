@@ -177,3 +177,63 @@
 .profileCard .msgAndID p{
   margin: 0;
 }
+
+@media only screen and (max-width: 1220px) {
+}
+
+@media only screen and (max-width: 920px) {
+  .socmed .title{
+    display: none;
+  }
+  .profiles{
+    padding: 4rem 10%;
+  }
+  .profileCard{
+    grid-template-columns: 1fr 4fr;
+    margin: 1.5rem 0;
+    margin-left: 5rem;
+    padding: 4rem;
+  }
+  .profileCard .img img{
+    display: none;
+  }
+  .product-container .image, .product-container .image img {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .product-container .image, .product-container .image img {
+    width: 90%;
+    /* display: none; */
+  }
+  .product-container{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0;
+  }
+  .product-container .desc{
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .hero h1{
+    font-size: 4.9rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+}
+
+@media only screen and (max-width: 240px) {
+}
+@media only screen and (max-width: 180px) {
+}
+
+@media only screen and (min-width: 1920px) {
+}
+
+@media only screen and (min-width: 2560px) {
+}
