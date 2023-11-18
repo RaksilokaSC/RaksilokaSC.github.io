@@ -1,0 +1,179 @@
+
+.tagline{
+  background-color: var(--lightGreen);
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--veryDarkGreen);
+}
+
+.video{
+  background-color: var(--lightGreen);
+}
+.video .dummy{
+  background-color: var(--green);
+  width: 48rem;
+  height: 27rem;
+  display: block;
+  margin: auto;
+}
+
+.hero{
+  padding-top: 10rem;
+  height: 52rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--gray); */
+  background-color: var(--lightGreen);
+}
+.hero .title{
+  text-align: center;
+  height: 8rem;
+  color: var(--superDarkGreen);
+}
+.hero h1{
+  font-size: 5rem;
+  height: 6rem;
+  padding: 0 0 1rem;
+  margin: 0;
+}
+.hero p{
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Bebas Neue", sans-serif;
+  height: 3rem;
+  padding: 1rem 0 0;
+  margin: 0;
+}
+
+.socmed{
+  height: 6rem;
+  /* background-color: var(--lightGray); */
+  background-color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.socmed .socmedItem{
+  display: flex;
+  align-items: center;
+}
+.socmed .logo{
+  width: 3.5rem;
+  height: 3.5rem;
+  display: inline-block;
+  background-color: var(--darkGray);
+  border-radius: 2.25rem;
+  background-size: 3.5rem;
+}
+.socmed .title{
+  display: inline-block;
+  font-size: 1.25rem;
+  height: 3.5rem;
+  padding: 1.125rem 1.5rem;
+}
+.socmed .logo.pji{
+  background-image: url(./pji.png);
+}
+.socmed .logo.zr{
+  background-image: url(./zr.png);
+}
+.socmed .logo.sm1{
+  background-image: url(./sm1.png);
+}
+
+.product{
+  background-color: var(--green);
+  padding: 4rem 6rem;
+}
+.product-container{
+  display: flex;
+  /* grid-template-columns: 2fr 3fr; */
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.product-container .desc{
+  margin-right: 4rem;
+  color: white;
+}
+.product-container h2.title{
+  font-size: 1.5rem;
+}
+.product-container p.description{
+  font-size: 1rem;
+}
+.product-container .image, .product-container .image img {
+  width: 25rem;
+}
+
+.profiles{
+  background-color: var(--green);
+  /* display: grid;
+  grid-template-columns: 1rem 15fr; */
+  padding: 8rem 15% 9.5rem;
+}
+.profiles .slider {
+  margin: auto 0;
+  display: block;
+}
+.profiles .sliderItems{
+  display: grid;
+  justify-content: center;
+  align-content: space-between;
+}
+.profiles .slider .dot{
+  width: .625rem;
+  height: .625rem;
+  border-radius: .375rem;
+  background-color: var(--profileShadow);
+  display: block;
+  margin: 1rem 1.1875rem;
+}
+.profiles .chakra-icon{
+  margin: 0 .5rem;
+}
+.profiles .sliderIcon{
+  width: 2rem;
+  height: 2rem;
+  color: #B98B55;
+}
+.profileCard{
+  padding: 3rem;
+  padding-left: 8rem;
+  background-color: var(--profile);
+  border-radius: 2rem;
+  margin: 1.5rem 0 0 1.5rem;
+  box-shadow: .5rem .5rem var(--profileShadow);
+  position: relative;
+}
+.profileCard .img img{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  display: block;
+  position: absolute;
+  left: -4rem;
+  top: -2.5rem;
+  box-shadow: .25rem .25rem var(--darkGreen);
+}
+.profileCard .msgAndID {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.profileCard .msgAndID .msg{
+  font-size: 1.25rem;
+}
+.profileCard .msgAndID .id{
+  text-align: right;
+}
+.profileCard .msgAndID h3 {
+  margin: 0;
+  padding: 0;
+}
+.profileCard .msgAndID p{
+  margin: 0;
+}
