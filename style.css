@@ -224,21 +224,6 @@ footer .smLink .username{
 }
 
 @media only screen and (max-width: 920px) {
-  .socmed .title{
-    display: none;
-  }
-  .profiles{
-    padding: 4rem 10%;
-  }
-  .profileCard{
-    grid-template-columns: 1fr 4fr;
-    margin: 1.5rem 0;
-    margin-left: 5rem;
-    padding: 4rem;
-  }
-  .profileCard .img img{
-    display: none;
-  }
   footer {
     grid-template-columns: 1fr;
     padding: 4rem 6rem;
@@ -285,9 +270,6 @@ footer .smLink .username{
   }
   section{
     padding: 4rem 2.5rem;
-  }
-  .hero h1{
-    font-size: 4.9rem;
   }
 }
 
