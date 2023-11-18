@@ -190,8 +190,7 @@
   }
   .profileCard{
     grid-template-columns: 1fr 4fr;
-    margin: 1.5rem 0;
-    margin-left: 5rem;
+    margin: 1.5rem;
     padding: 4rem;
   }
   .profileCard .img img{
