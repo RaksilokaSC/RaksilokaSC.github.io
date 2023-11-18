@@ -66,7 +66,8 @@ nav {
   background-color: var(--navGreen);
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   align-items: center;
   transition: all 350ms ease;
   z-index: 100;
@@ -128,7 +129,7 @@ footer {
   background: #383431;
   color: #F1F1F1;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   padding: 4rem 8rem;
 }
 footer .links-container {
@@ -197,7 +198,7 @@ footer p {
   word-wrap: break-word;
 }
 footer .endingText{
-  text-align: left;
+  display: none;
   grid-column: 1/3;
   margin: 2rem 0 0;
 }
@@ -205,7 +206,7 @@ footer .smLink{
   display: flex;
   justify-content: left;
   align-items: start;
-  gap: .25rem;
+  gap: .5rem;
 }
 footer .smLink img{
   width: 1.25rem;
