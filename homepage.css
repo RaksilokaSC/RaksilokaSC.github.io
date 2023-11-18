@@ -109,6 +109,11 @@
   width: 25rem;
 }
 
+.tagline p{
+  margin: .5rem;
+  font-size: 1rem;
+}
+
 .profiles{
   background-color: var(--green);
   /* display: grid;
